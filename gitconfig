@@ -1,0 +1,15 @@
+[alias]
+	st = status
+	ol = log --oneline --decorate --color=always
+	# show branch info
+	bi = for-each-ref --sort=authordate --format='%(color:cyan)%(authordate:format:%m/%d/%Y %I:%M %p)%(align:25,left)%(color:yellow) %(authorname)%(end)%(color:reset)%(refname:strip=3)' refs/remotes
+	# show authors in thos repo
+	authors = log --format='%aN'
+	# show commits by author
+	ncba = shortlog -sn
+	hist = log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all --color=always
+[user]
+	name = YOUR_USER_NAME
+	email = YOUR_EMAIL
+[gui]
+	recentrepo = /Users/gaga/temp/test
