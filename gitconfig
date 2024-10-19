@@ -1,6 +1,7 @@
 [alias]
 	st = status
-	ol = log --oneline --decorate --color=always
+	#ol = log --oneline --decorate --color=always
+        ol = log --pretty=format:'%C(cyan)%h%Creset ->%C(yellow)%d%Creset %C(bold red)%s%Creset %C(green)(%cr) %C(bold magenta)by %an%Creset' --color=always
 	# show branch info
 	bi = for-each-ref --sort=authordate --format='%(color:cyan)%(authordate:format:%m/%d/%Y %I:%M %p)%(align:25,left)%(color:yellow) %(authorname)%(end)%(color:reset)%(refname:strip=3)' refs/remotes
 	# show authors in thos repo
